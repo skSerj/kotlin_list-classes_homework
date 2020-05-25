@@ -1,9 +1,11 @@
-val smartphonesList = listOf<DataSmartphones>(
-    DataSmartphones("Samsung", "s10", 16999),
-    DataSmartphones("Iphone", "XS", 24000),
-    DataSmartphones("Xiaomi", "Redmi10", 15000),
-    DataSmartphones("Xiaomi", "Redmi8", 7000),
-    DataSmartphones("Huawei", "P40Lite", 8000)
+package task1
+
+val smartphonesList = listOf<DataSmartphonesTask1>(
+    DataSmartphonesTask1("Samsung", "s10", 16999),
+    DataSmartphonesTask1("Iphone", "XS", 24000),
+    DataSmartphonesTask1("Xiaomi", "Redmi10", 15000),
+    DataSmartphonesTask1("Xiaomi", "Redmi8", 7000),
+    DataSmartphonesTask1("Huawei", "P40Lite", 8000)
 )
 val finderManufacturer = "Iphone"
 val minPrice = 16000
