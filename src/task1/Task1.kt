@@ -15,11 +15,9 @@ var smartPrice = smartphonesList[0].price
 var indexOfSmartphone = 0
 
 fun main(args: Array<String>) {
-    smartphonesList.forEach { smartphone ->
-        if (smartphone.manufacturer.contains(finderManufacturer)) {
-            println("You find ${smartphone.manufacturer}")
-        }
-    }
+    val smartByManufacturer = (smartphonesList)
+        .filter { it.manufacturer.contains(finderManufacturer) }
+    println("Finder smartphone by manufacturing ($finderManufacturer): $smartByManufacturer")
 
     smartphonesList.forEach { smartphone ->
         if (smartphone.price in minPrice..maxPrice) {
